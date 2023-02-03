@@ -10,7 +10,7 @@ pip install pyautogui clipboard datetime pywinauto selenium opencv-python pillow
 4.activate() 에러시 대안 
 import pywinauto #설치 필요
 win = pg.getWindowsWithTitle("제목 없음")[0]
-pg.application.Application().connect(handle=win._hWnd).top_window().set_focus()
+pywinauto.application.Application().connect(handle=win._hWnd).top_window().set_focus()
 pg.sleep(1)
 win.activate()
 
