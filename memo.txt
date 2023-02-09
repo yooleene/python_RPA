@@ -8,12 +8,8 @@ pip install jupyter --trusted-host pypi.org --trusted-host files.pythonhosted.or
 pip install pyautogui clipboard datetime pywinauto selenium opencv-python pillow openpyxl pandas lxml xlrd bs4 requests html5lib --trusted-host pypi.org --trusted-host files.pythonhosted.org
 
 4.activate() 에러시 대안 
-import pywinauto #설치 필요
+import pywinauto
 win = pg.getWindowsWithTitle("제목 없음")[0]
 pywinauto.application.Application().connect(handle=win._hWnd).top_window().set_focus()
 pg.sleep(1)
-<<<<<<< HEAD
 win.activate()
-=======
-win.activate()
->>>>>>> bd780641380aa6748e89f43b28a7eb9f1a9e99be
