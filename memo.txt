@@ -12,4 +12,8 @@ import pywinauto #설치 필요
 win = pg.getWindowsWithTitle("제목 없음")[0]
 pywinauto.application.Application().connect(handle=win._hWnd).top_window().set_focus()
 pg.sleep(1)
+<<<<<<< HEAD
 win.activate()
+=======
+win.activate()
+>>>>>>> bd780641380aa6748e89f43b28a7eb9f1a9e99be
